@@ -1,0 +1,22 @@
+## 설치된 shadcn/ui 컴포넌트
+
+- avatar
+- badge
+- button
+- card
+- dialog
+- dropdwon-menu
+- form
+- input
+- label
+- -navigation-menu
+- -pagination
+- select
+- separator
+- sheet
+- sidebar
+- skeleton
+- sonner
+- table
+- textarea
+- tooltip
