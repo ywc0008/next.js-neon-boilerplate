@@ -9,8 +9,8 @@
 - form
 - input
 - label
-- -navigation-menu
-- -pagination
+- navigation-menu
+- pagination
 - select
 - separator
 - sheet
