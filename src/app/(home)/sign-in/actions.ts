@@ -6,18 +6,11 @@ import { signIn } from "@/auth";
 const SUPPORTED_PROVIDERS = ["google", "apple", "kakao", "naver", "github"];
 
 export async function signInWithOauth(provider: string) {
-	try {
-		const providerLower = provider.toLowerCase();
+	const providerLower = provider.toLowerCase();
 
-		// Validate provider
-		if (!SUPPORTED_PROVIDERS.includes(providerLower)) {
-			console.error(`Unsupported OAuth provider: ${provider}`);
-			return;
-		}
-
-		// Proceed with OAuth login
+	if (SUPPORTED_PROVIDERS.includes(providerLower)) {
 		await signIn(providerLower, { redirectTo: "/" });
-	} catch (error) {
-		// console.error("Error during OAuth login:", error);
+	} else {
+		console.error("Unsupported OAuth provider:", provider);
 	}
 }
