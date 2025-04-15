@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import OauthLoginButton from "./components/Oauth-login-button";
+
+import OauthLoginButtons from "./components/Oauth-login-buttons";
 
 export default function SignInPage() {
 	return (
@@ -10,11 +11,7 @@ export default function SignInPage() {
 					<CardDescription className="text-center">Sign in with</CardDescription>
 				</CardHeader>
 				<CardContent className="space-y-4">
-					<OauthLoginButton provider="Google" />
-					<OauthLoginButton provider="Apple" />
-					<OauthLoginButton provider="Kakao" />
-					<OauthLoginButton provider="Naver" />
-					<OauthLoginButton provider="Github" />
+					<OauthLoginButtons />
 				</CardContent>
 			</Card>
 		</div>
