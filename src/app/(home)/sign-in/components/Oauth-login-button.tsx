@@ -5,7 +5,7 @@ import { useTransition } from "react";
 import { Button } from "@/components/ui/button";
 import { GoogleIcon, AppleIcon, KakaoIcon, NaverIcon, GithubIcon } from "@/components/common/social-icons";
 
-import { signInWithOauth } from "../actions";
+import { signInWithOauthAction } from "../actions";
 
 interface OauthLoginButtonProps {
 	provider: "Apple" | "Google" | "Kakao" | "Naver" | "Github";
@@ -25,7 +25,7 @@ export default function OauthLoginButton({ provider, isDisabled = false, onLogin
 
 		setTimeout(() => {
 			startTransition(async () => {
-				await signInWithOauth(provider);
+				await signInWithOauthAction(provider);
 			});
 		}, 10);
 	};

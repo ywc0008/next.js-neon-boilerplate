@@ -5,7 +5,7 @@ import { signIn } from "@/auth";
 // List of supported OAuth providers
 const SUPPORTED_PROVIDERS = ["google", "apple", "kakao", "naver", "github"];
 
-export async function signInWithOauth(provider: string) {
+export async function signInWithOauthAction(provider: string) {
 	const providerLower = provider.toLowerCase();
 
 	if (SUPPORTED_PROVIDERS.includes(providerLower)) {
