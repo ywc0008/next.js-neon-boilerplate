@@ -17,5 +17,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth(() => {
 	return {
 		adapter: NeonAdapter(pool),
 		providers: [Google, Apple, Kakao, Naver, GitHub],
+		session: {
+			strategy: "jwt",
+			maxAge: 60 * 60 * 24 * 7,
+		},
 	};
 });
