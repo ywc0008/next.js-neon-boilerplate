@@ -4,7 +4,7 @@ import OauthLoginButtons from "./components/Oauth-login-buttons";
 
 export default function SignInPage() {
 	return (
-		<div className="flex min-h-screen items-center justify-center bg-background p-4">
+		<div className="flex min-h-[calc(100vh-70px)] items-center justify-center bg-background p-4">
 			<Card className="w-full max-w-md">
 				<CardHeader className="space-y-1">
 					<CardTitle className="text-2xl font-bold text-center">Sign in</CardTitle>
